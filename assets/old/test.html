@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>My Page</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="bootstrap.css" type="text/css">
+    <script src="jquery-3.3.1.min.js"></script>
+<head>
+<body>
+<div class="container" id="container">
+    <h2>Button</h2>
+    <p> .btn 类是按钮的基本样式:</p>
+    <button type="button" id="ok" class="btn btn-primary" onclick="ok.validClick('aaa');">基本按钮</button>
+    <div class="row">
+        <div class="col-md-4 col-xs-4">
+            <button type="button" id="ok1" class="btn btn-primary" style='width:85px;height:85px;margin:10px 10px 10px 10px;' onclick="ok.validClick('aaa');">基本按钮</button>
+        </div>
+        <div class="col-md-4 col-xs-4">
+            <button type="button" id="ok2" class="btn btn-primary" style='width:85px;height:85px;margin:10px 10px 10px 10px;' onclick="ok.validClick('aaa');">基本按钮基本按钮</button>
+        </div>
+        <div class="col-md-4 col-xs-4">
+            <button type="button" id="ok3" class="btn btn-primary" style='width:85px;height:85px;margin:10px 10px 10px 10px;' onclick="ok.validClick('aaa');">基本按钮基本按钮基本按钮</button>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+$(function(){
+});
+function javaCallJs(arg){
+    $("#"+args).click();
+}
+function generateButtons(arr) {
+    arr.forEach(function(i,index){
+        $("#container").append("<button type='button' style='width:100px;height:100px;margin:10px 10px 10px 10px;' id='ok_'" + index + " class='btn btn-primary' onclick='ok.validClick(" + index + ");'>" + i +"</button>");
+    });
+}
+</script>
+</html>

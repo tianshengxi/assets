@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="ja" style="overflow-y:hidden;">
+<!-- begin::Head -->
+<head>
+    <meta charset="utf-8" />
+    <title>
+        カウンター方式
+    </title>
+    <meta name="description" content="Latest updates and statistic charts">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--begin::Web font -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>-->
+    <script src="assets/vendors/base/webfont.js" type="text/javascript"></script>
+    <script>
+        WebFont.load({
+            google: { "families": ["Poppins:300,400,500,600,700", "Roboto:300,400,500,600,700"] },
+            active: function () {
+                sessionStorage.fonts = true;
+            }
+        });
+    </script>
+    <!--end::Web font -->
+    <!--begin::Base Styles -->
+    <!--begin::Page Vendors -->
+    <link href="assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+    <!--end::Page Vendors -->
+    <link href="assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/demo/default/base/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="カウンター方式.css" rel="stylesheet" type="text/css" />
+    <!--end::Base Styles -->
+    <link rel="shortcut icon" href="assets/demo/default/media/img/logo/favicon.ico" />
+</head>
+<!-- end::Head -->
+<!-- end::Body -->
+<body class="m-page--fluid m--skin- m-content--skin-light2 m-aside-left--skin-dark m-aside--offcanvas-default">
+    <!-- begin:: Page -->
+    <!-- begin::Body -->
+    <div class="m-grid__item m-grid__item--fluid m-wrapper" style="height:100%">
+        <div class="m-stack m-stack--hor m-stack--general m-stack--demo" style="height:100%">
+            <div class="m-stack__item m-stack__item--left m-stack__item--middle">
+                <div class="m-stack__item m-stack__item--left m-stack__item--middle">
+                    <div class="btn m-btn--air m-btn--pill btn-outline-danger m-btn m-btn--custom m-btn--outline-2x" style="text-align: left;width:auto;font-size: large;">
+                        <span>
+                            <i class="fa fa-chevron-circle-left" style="font-size: x-large;"></i>
+                            <span>
+                                カウンター方式
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="height: auto;background-image:url('assets/app/media/img/bg/bg-3.jpg');background-size:auto;">
+                <div style="height:100%;overflow-y:auto;overflow-x:hidden;">
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo m-stack--demorow">
+                        <div class="m-stack__item m-stack__item--center m-stack__item--middle">
+                            <div class="input-group">
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                <div class="input-group-btn" style="height:100%;">
+                                    <button type="button" class="btn btn-outline-brand dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="height:100%;">
+                                        个
+                                    </button>
+                                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 37px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                        <h6 class="dropdown-header">
+                                            选个单位把哥们
+                                        </h6>
+                                        <a class="dropdown-item" href="#">
+                                            匹
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            头
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            只
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">
+                                            索纳塔
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo m-stack--demorow">
+                        <div class="m-stack__item m-stack__item--center m-stack__item--middle">
+                            <div class="btn m-btn--air btn-outline-info m-btn m-btn--custom m-btn--outline-2x main-btn">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <i class="fa fa-plus" style="font-size: x-large;"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="m-stack__item m-stack__item--center m-stack__item--middle">
+                            <div class="btn m-btn--air btn-outline-info m-btn m-btn--custom m-btn--outline-2x main-btn">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <i class="fa fa-minus" style="font-size: x-large;"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo m-stack--demorow">
+                        <div class="m-stack__item m-stack__item--center m-stack__item--middle">
+                            <div class="form-group m-form__group row time-row" style="height:50%;">
+                                <div style="margin: auto;height:100%;">
+                                    <input id="m_touchspin_3" type="text" class="form-control" value="0" name="demo1" placeholder="Select time">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo m-stack--demorow">
+                        <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width:33.33%">
+                        </div>
+                        <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width:66.66%">
+                            <div class="btn m-btn--air btn-outline-info m-btn m-btn--custom m-btn--outline-2x main-btn">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            决定
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end:: Body -->
+    <!--begin::Base Scripts -->
+    <script src="assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
+    <script src="assets/demo/default/base/scripts.bundle.js" type="text/javascript"></script>
+    <!--end::Base Scripts -->
+    <!--begin::Page Vendors -->
+    <script src="assets/vendors/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
+    <!--end::Page Vendors -->
+    <!--begin::Page Snippets -->
+    <script src="assets/app/js/dashboard.js" type="text/javascript"></script>
+    <!--end::Page Snippets -->
+    <script src="カウンター方式.js" type="text/javascript"></script>
+</body>
+<!-- end::Body -->
+</html>

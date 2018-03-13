@@ -1,0 +1,783 @@
+﻿<!DOCTYPE html>
+<html lang="ja" style="overflow-y:hidden;">
+<!-- begin::Head -->
+<head>
+    <meta charset="utf-8" />
+    <title>
+        実績一覧
+    </title>
+    <meta name="description" content="Latest updates and statistic charts">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--begin::Web font -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>-->
+    <script src="assets/vendors/base/webfont.js" type="text/javascript"></script>
+    <script>
+        WebFont.load({
+            google: { "families": ["Poppins:300,400,500,600,700", "Roboto:300,400,500,600,700"] },
+            active: function () {
+                sessionStorage.fonts = true;
+            }
+        });
+    </script>
+    <!--end::Web font -->
+    <!--begin::Base Styles -->
+    <!--begin::Page Vendors -->
+    <link href="assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+    <!--end::Page Vendors -->
+    <link href="assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/demo/default/base/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="実績一覧.css" rel="stylesheet" type="text/css" />
+    <!--end::Base Styles -->
+    <link rel="shortcut icon" href="assets/demo/default/media/img/logo/favicon.ico" />
+</head>
+<!-- end::Head -->
+<!-- end::Body -->
+<body class="m-page--fluid m--skin- m-content--skin-light2 m-aside-left--skin-dark m-aside--offcanvas-default">
+<!-- begin:: Page -->
+<!-- begin::Body -->
+<div class="m-stack m-stack--hor m-stack--general m-stack--demo">
+    <div id="header" class="m-stack__item m-stack__item--left m-stack__item--middle">
+        <div class="m-stack m-stack--ver m-stack--general m-stack--demo m-stack--demorow">
+            <div class="m-stack__item m-stack__item--left m-stack__item--middle">
+                <div class="btn m-btn--air m-btn--pill btn-accent m-btn btn-sm" style="text-align: left;width:auto;font-size: large;">
+                    <i class="fa fa-chevron-circle-left" style="font-size: large;"></i>
+                    <span>
+                        戻る
+                    </span>
+                </div>
+            </div>
+            <div class="m-stack__item m-stack__item--center m-stack__item--middle">
+                    <span class="main-title" style="font-size:x-large;">
+                        実績一覧
+                    </span>
+            </div>
+            <div class="m-stack__item m-stack__item--right m-stack__item--middle">
+                <div class="btn m-btn--air m-btn--pill btn-warning m-btn btn-sm" style="text-align: left;width:auto;font-size: large;">
+                    <i class="fa fa-cloud-upload" style="font-size: large;"></i>
+                    <span>
+                        送信
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="background-color:#ffffff">
+            <div class="m-stack__item m-stack__item--left m-stack__item--middle" style="width: 20%;">
+                全解除
+            </div>
+        </div>
+    </div>
+    <div class="m-stack__item m-stack__item--center m-stack__item--middle m-stack__item--fluid" style="background-image:url('assets/app/media/img/bg/bg-3.jpg');background-size:auto;">
+        <div class="m-stack m-stack--hor m-stack--general m-stack--demo">
+            <div class="m-stack__item m-stack__item--center m-stack__item--middle m-stack__item--fluid">
+                <div style="height:100%;overflow-y:auto;">
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #fd0000;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    入荷
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    aaaaaaa123
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #4afd00;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    入荷
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    aaaaaaa123
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #0400fd;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    ピック
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    20個
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #4afd00;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    ピック
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    24個
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #4afd00;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    ピック
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    24個
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #4afd00;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    ピック
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    24個
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #4afd00;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    ピック
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    24個
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #4afd00;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    ピック
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    24個
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #4afd00;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    ピック
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    24個
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #4afd00;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    ピック
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    24個
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #4afd00;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    ピック
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    24個
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #4afd00;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    ピック
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    24個
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #4afd00;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    ピック
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    24個
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #4afd00;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    ピック
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    24個
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #4afd00;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    ピック
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    24個
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #4afd00;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    ピック
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    24個
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #4afd00;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    ピック
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    24個
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #4afd00;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    ピック
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    24個
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #4afd00;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    ピック
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    24個
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #4afd00;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    ピック
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    24個
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #4afd00;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    ピック
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    24個
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #4afd00;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    ピック
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    24個
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--demo record-row" style="border: solid 5px #4afd00;border-radius: 10px;">
+                    <div class="m-stack__item m-stack__item--right m-stack__item--middle" style="width: 20%;">
+                    <label class="m-checkbox m-checkbox--state-brand">
+                    <input type="checkbox">
+                    <span></span>
+                    </label>
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="width: 60%;font-size: 1.3rem;font-weight: bold;">
+                    ピック
+                    </div>
+                    <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--fluid">
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    <input type='text' class="form-control m_timepicker_1 m_timepicker" readonly placeholder="Select time" />
+                    </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="m-stack m-stack--ver m-stack--general">
+                    <div class="m-stack__item m-stack__item--center m-stack__item--middle" style="padding:0;">
+                    24個
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end:: Body -->
+<!--begin::Base Scripts -->
+<script src="assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
+<script src="assets/demo/default/base/scripts.bundle.js" type="text/javascript"></script>
+<!--end::Base Scripts -->
+<!--begin::Page Vendors -->
+<script src="assets/vendors/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
+<!--end::Page Vendors -->
+<!--begin::Page Snippets -->
+<script src="assets/app/js/dashboard.js" type="text/javascript"></script>
+<!--end::Page Snippets -->
+<script src="実績一覧.js" type="text/javascript"></script>
+</body>
+<!-- end::Body -->
+</html>
